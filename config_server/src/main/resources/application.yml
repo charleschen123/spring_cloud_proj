@@ -1,0 +1,36 @@
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://172.18.5.78:8761/eureka/
+server:
+   port: 8888
+spring:
+   application:
+      name: config-server
+   cloud:
+      config:
+         server:
+            git:
+               uri: https://github.com/charleschen123/spring-cloud.git
+               searchPaths: spring-cloud
+               username:: charleschen123
+               password: Cc19851203
+      bus:
+         trace:
+            enabled: true
+   rabbitmq:
+       host: 172.18.5.78
+       port: 5672
+       username: dcfund
+       password: dcfund123
+
+   main:
+      allow-bean-definition-overriding: true
+
+management:
+   endpoints:
+      web:
+         exposure:
+            include: "*"
+   serurity:
+      enabled: false

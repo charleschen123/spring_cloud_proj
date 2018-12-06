@@ -1,0 +1,18 @@
+server:
+   port: 8763
+spring:
+   application:
+      name: service-helloworld2
+   rabbitmq:
+      host: 172.18.5.78
+      port: 5672
+      username: dcfund
+      password: dcfund123
+management:
+   endpoints:
+      web:
+         exposure:
+            include: "*"
+   serurity:
+      enabled: false
+   
