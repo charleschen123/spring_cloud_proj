@@ -2,7 +2,7 @@ server:
    port: 8762
 spring:
    application:
-      name: service-helloworld
+      name: service-provider
    rabbitmq:
       host: 172.18.5.78
       port: 5672
